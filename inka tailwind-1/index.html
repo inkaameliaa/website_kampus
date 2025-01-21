@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <title>STTIKOM Insan Unggul Cilegon</title>
+</head>
+<body>
+  <header class="bg-black sticky top-0 px-10">
+    <nav class="text-white w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+        <img src="Logo SIU.png" alt="" style="height: 60px; width: 60px;">
+        <ul class="hidden md:flex bg-black">
+            <li class="px-7 py-1 hover:text-gray-500"><a href="index.html">Home</a></li>
+            <li class="px-7 py-1 hover:text-gray-500"><a href="profil.html">Tentang</a></li>
+            <li class="px-7 py-1 hover:text-gray-500"><a href="gallery.html">Gallery</a></li>
+            <li class="px-7 py-1 hover:text-gray-500"><a href="daftar.html" class="border-2 border-red-500 py-2 px-5 hover:bg-red-500 text-white rounded-xl">Daftar</a></li>
+        </ul>
+    </nav>
+  </header>
+  <section class="relative text-white h-screen px-20" style="background-image: url('bg.jpg'); background-size: cover; background-position: center;">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+
+    <!-- Content -->
+    <div class="relative container mx-auto h-full flex items-center">
+      <div class="w-2/4 text-left">
+        <h3 class="text-5xl text-white font-bold mb-5">STTIKOM INSAN UNGGUL CILEGON</h3>
+        <p class="text-white mb-10">Membangun Masa Depan dengan Ilmu dan Teknologi</p>
+        <a href="daftar.html" class="bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-800">Daftar</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-gray-900 py-10">
+    <div class="container mx-auto text-white text-center">
+      <div class="flex justify-center space-x-6 mb-5">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>&copy; 2024 STTIKOM Insan Unggul Cilegon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.hero-slider').slick({
+        autoplay: true,  // Enable autoplay
+        autoplaySpeed: 2000,  // Time for each slide change (in milliseconds)
+        dots: true,  // Show navigation dots
+        arrows: false,  // Hide previous/next navigation arrows
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!doctype html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left-to-right {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-in-out forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px); /* Mulai dari posisi bawah */
+}
+
+.animate-slide-left-to-right {
+  animation: slide-left-to-right 0.8s ease-out forwards;
+}
+
+.slide-left-to-right {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+header {
+  z-index: 50; /* Pastikan navbar selalu di atas elemen lainnya */
+}
+  </style>
+
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <title>STTIKOM Insan Unggul Cilegon</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="bg-black sticky top-0 px-10">
+    <nav class="text-white w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+      <img src="Logo SIU.png" alt="" style="height: 60px; width: 60px;">
+      <ul class="hidden md:flex bg-black">
+        <li class="px-7 py-1 hover:text-gray-500"><a href="index.html">Home</a></li>
+        <li class="px-7 py-1 hover:text-gray-500"><a href="profil.html">Tentang</a></li>
+        <li class="px-7 py-1 hover:text-gray-500"><a href="gallery.html">Gallery</a></li>
+        <li class="px-7 py-1 hover:text-gray-500"><a href="daftar.html" class="border-2 border-red-500 py-2 px-5 hover:bg-red-500 text-white rounded-xl">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="History" class="bg-white py-20 px-20 mt-16">
+    <div class="container mx-auto ">
+      <h3 class="text-5xl font-bold text-center mb-5 pb-9 slide-up">Sejarah </h3>
+      <div class="bg-white p-8 rounded-xl border border-gray-300 slide-up">
+        <p class="text-gray-500 text-justify">
+          STTIKOM Insan Unggul Cilegon didirikan dengan tujuan untuk mencetak lulusan yang kompeten di bidang teknologi informasi. Sejak berdirinya, kampus ini telah berkomitmen untuk memberikan pendidikan yang berkualitas tinggi dengan dukungan fasilitas modern. Kami berusaha untuk terus berinovasi dan mengikuti perkembangan teknologi serta kebutuhan industri yang terus berubah. 
+          Dengan pendekatan yang berbasis pada keunggulan akademik dan pengembangan keterampilan, STTIKOM Insan Unggul siap menghasilkan generasi muda yang siap menghadapi tantangan global di dunia teknologi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="VisiMisi" class="py-20 px-20" style="background-color: rgb(255, 255, 255);">
+    <div class="container mx-auto">
+      <h3 class="text-5xl font-bold text-center mb-5 pb-9 slide-up">Visi & Misi</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Visi -->
+        <div class="py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <h4 class="text-2xl font-bold mb-5 text-center">Visi</h4>
+          <p class="text-gray-500 mb-5 text-justify">Menjadi institusi pendidikan tinggi yang unggul dalam bidang teknologi dan informasi, serta mampu menghasilkan lulusan yang kompeten, inovatif, dan berdaya saing global.</p>
+          <p class="text-gray-500 mb-5 text-justify">Menjadi pusat keunggulan dalam penelitian dan pengembangan teknologi informasi yang berkontribusi pada masyarakat.</p>
+        </div>
+        
+        <!-- Misi -->
+        <div class="py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <h4 class="text-2xl font-bold mb-5 text-center">Misi</h4>
+          <p class="text-gray-500 mb-5">1. Menyediakan pendidikan berkualitas tinggi yang relevan dengan kebutuhan industri dan masyarakat.</p>
+          <p class="text-gray-500 mb-5">2. Melaksanakan penelitian dan pengembangan di bidang teknologi dan informasi untuk kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p>
+          <p class="text-gray-500 mb-5">3. Mengabdi kepada masyarakat melalui penerapan ilmu pengetahuan dan teknologi yang bermanfaat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="Services" class="py-20 px-20" style="background-color: rgb(255, 255, 255);">
+    <div class="container mx-auto">
+      <h3 class="text-5xl font-bold text-center mb-5 pb-9 slide-left-to-right">Tentang Kami</h3>
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Service 1-->
+        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl border border-gray-300 slide-left-to-right">
+          <img src="profil.jpg" style="width: 100px; height: 100px;" alt="Data Analytic" >
+          <div>
+            <h4 class="text-2xl font-bold mb-5">Profil Kampus</h4>
+            <p class="text-gray-500 mb-5 text-justify">Kami memiliki lingkungan kampus yang kondusif untuk belajar, dengan fasilitas modern dan sumber daya yang mendukung pengembangan mahasiswa di berbagai bidang.</p>
+            <a href="profil.html" class="hover:text-gray-500">Lihat Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Service 2-->
+        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl border border-gray-300 slide-left-to-right">
+          <img src="jurusan.jpg" style="width: 100px; height: 100px;" alt="Data Analytic">
+          <div>
+            <h4 class="text-2xl font-bold mb-5">Jurusan</h4>
+            <p class="text-gray-500 mb-5 text-justify">Kami menawarkan berbagai program studi yang dirancang dengan cermat untuk memenuhi kebutuhan pasar kerja yang terus berkembang, serta mengikuti perkembangan teknologi.</p>
+            <a href="profil.html" class="hover:text-gray-500">Lihat Selengkapnya</a>
+          </div>
+        </div>
+        
+        <!-- Service 3-->
+        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl border border-gray-300 slide-left-to-right">
+          <img src="ranking.png" style="width: 100px; height: 100px;" alt="Developer & Maintenance">
+          <div>
+            <h4 class="text-2xl font-bold mb-5">Ranking Kampus</h4>
+            <p class="text-gray-500 mb-5 text-justify">Kami sangat bangga dengan prestasi dan pengakuan yang telah berhasil diraih, bukti nyata dari komitmen kami untuk terus memberikan pendidikan berkualitas tinggi.</p>
+            <a href="" class="hover:text-gray-500">Lihat Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl border border-gray-300 slide-left-to-right">
+          <img src="lokasi.jpg" style="width: 100px; height: 100px;" alt="24/7 Protection">
+          <div>
+            <h4 class="text-2xl font-bold mb-5">Lokasi</h4>
+            <p class="text-gray-500 mb-5 text-justify">Kampus kami terletak di lokasi yang sangat strategis, dengan aksesibilitas yang mudah dan fasilitas yang lengkap, memberikan kenyamanan maksimal mahasiswa.</p>
+            <a href="" class="hover:text-gray-500">Lihat Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jurusan Section -->
+  <section id="Jurusan" class="bg-gray-200 py-20 px-20" style="background-color: rgb(255, 255, 255);">
+    <div class="container mx-auto">
+      <h3 class="text-5xl font-bold text-center mb-5 pb-9 slide-up">Jurusan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Jurusan Teknik Informatika -->
+        <div class="flex flex-col items-center py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <img src="ti.jpg" alt="Teknik Informatika" class="mb-4">
+          <h4 class="text-2xl font-bold mb-3 text-center">Teknik Informatika</h4>
+          <p class="text-gray-500 mb-5 text-justify">Program studi ini mempersiapkan mahasiswa untuk menguasai berbagai konsep dalam pemrograman, jaringan komputer, serta pengembangan sistem.</p>
+          <a href="" class="text-red-500 hover:text-red-700">Lihat Selengkapnya</a>
+        </div>
+        
+        <!-- Jurusan Sistem Informasi -->
+        <div class="flex flex-col items-center py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <img src="si.jpg" alt="Sistem Informasi" class="mb-4">
+          <h4 class="text-2xl font-bold mb-3 text-center">Sistem Informasi</h4>
+          <p class="text-gray-500 mb-5 text-justify">Jurusan ini berfokus pada pengelolaan informasi, analisis sistem, serta sumber daya teknologi dan pemanfaatan teknologi untuk meningkatkan efisiensi dan efektivitas organisasi.</p>
+          <a href="" class="text-red-500 hover:text-red-700">Lihat Selengkapnya</a>
+        </div>
+
+        <!-- Jurusan Manajemen Informatika -->
+        <div class="flex flex-col items-center py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <img src="mi.jpg" alt="Manajemen Informatika" class="mb-4">
+          <h4 class="text-2xl font-bold mb-3 text-center">Manajemen Informatika</h4>
+          <p class="text-gray-500 mb-5 text-justify">Fokus pada manajemen sumber daya teknologi informasi, pengelolaan proyek IT, serta pemanfaatan teknologi, integrasi teknologi untuk mendukung kegiatan bisnis dan organisasi.</p>
+          <a href="" class="text-red-500 hover:text-red-700">Lihat Selengkapnya</a>
+        </div>
+
+        <!-- Jurusan Komputerisasi Akuntansi -->
+        <div class="flex flex-col items-center py-8 px-8 bg-white rounded-xl border border-gray-300 slide-up">
+          <img src="ka.jpg" alt="Komputerisasi Akuntansi" class="mb-4">
+          <h4 class="text-2xl font-bold mb-3 text-center">Komputerisasi Akuntansi</h4>
+          <p class="text-gray-500 mb-5 text-justify">Program studi ini mempersiapkan mahasiswa untuk menguasai teknologi dalam akuntansi, mulai dari penggunaan software akuntansi hingga analisis data.</p>
+          <a href="" class="text-red-500 hover:text-red-700">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-10">
+    <div class="container mx-auto text-white text-center">
+      <div class="flex justify-center space-x-6 mb-5">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>&copy; 2024 STTIKOM Insan Unggul Cilegon. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  // Pilih elemen dengan kelas .slide-up dan .slide-left-to-right
+  const slideUpElements = document.querySelectorAll('.slide-up');
+  const slideLeftToRightElements = document.querySelectorAll('.slide-left-to-right');
+  
+  const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-slide-up');
+      } else {
+        entry.target.classList.remove('animate-slide-up');
+      }
+    });
+  },
+  { rootMargin: '-70px 0px 0px 0px', threshold: 0.2 } // Menyesuaikan posisi navbar
+);
+
+const leftToRightObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-slide-left-to-right');
+      } else {
+        entry.target.classList.remove('animate-slide-left-to-right');
+      }
+    });
+  },
+  { rootMargin: '-70px 0px 0px 0px', threshold: 0.2 }
+);
+
+  // Amati elemen slide-up
+  slideUpElements.forEach((element) => {
+    observer.observe(element);
+  });
+
+  // Amati elemen slide-left-to-right
+  slideLeftToRightElements.forEach((element) => {
+    leftToRightObserver.observe(element);
+  });
+});
+
+</script>
